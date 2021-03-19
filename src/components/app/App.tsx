@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './App.css'
+import './App.less'
 
-const App: any = () => {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +20,7 @@ const App: any = () => {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
 export default App
