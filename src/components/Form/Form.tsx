@@ -15,13 +15,17 @@ const Form: React.FC<IFormProps> = (props) => {
   }
 
   const clickHandler = () => {
-    layoutStore.setUser(1, '1')
+    layoutStore.setUser(0, '1')
   }
 
   return (
     <div>
-      ID: {user.id} <br/>
-      Имя: {user.name}
+      <div>
+        ID: {user.id}
+      </div>
+      <div>
+        Имя: {user.name}
+      </div>
 
       <input type='text' value={userInfo.name ?? ''} onChange={handleChange}/>
       <button onClick={clickHandler}>

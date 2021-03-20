@@ -1,6 +1,5 @@
 import { ILayoutStore, User } from 'interfaces'
 import {
-  observable,
   configure,
   toJS,
   makeAutoObservable
@@ -9,7 +8,7 @@ import {
 configure({ enforceActions: 'observed' })
 
 class LayoutStore implements ILayoutStore{
-  @observable user: User
+  user: User
 
   constructor() {
     makeAutoObservable(this)
